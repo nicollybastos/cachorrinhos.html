@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba da página -->
+    <title>Curiosidades sobre Cachorros</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-color: #333333;
+            --link-color: #3498db;
+            --link-hover: #2980b9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--card-background);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .site-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .card img:hover {
+            opacity: 0.9;
+        }
+
+        .card-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+            color: var(--link-hover);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título do corpo da página -->
+    <header>
+        <h1>Curiosidades sobre Cachorros: Nicolly Góes Bastos</h1>
+    </header>
+
+    <main>
+        <div class="gallery">
+
+            <!-- Card 1: Golden Retriever -->
+            <section class="card">
+                <div class="site-title">Petz</div>
+                <a href="https://www.petz.com.br/cachorro/racas/golden-retriever/" target="_blank" rel="noopener noreferrer">
+                    <img src="golden.png" alt="Cachorro da raça Golden Retriever">
+                </a>
+                <a class="card-link" href="https://www.petz.com.br/cachorro/racas/golden-retriever/" target="_blank" rel="noopener noreferrer">
+                    Acessar Guia do Golden Retriever
+                </a>
+            </section>
+
+            <!-- Card 2: Pastor Alemão -->
+            <section class="card">
+                <div class="site-title">Petz</div>
+                <a href="https://www.petz.com.br/cachorro/racas/pastor-alemao/" target="_blank" rel="noopener noreferrer">
+                    <img src="pastor.png" alt="Cachorro da raça Pastor Alemão">
+                </a>
+                <a class="card-link" href="https://www.petz.com.br/cachorro/racas/pastor-alemao/" target="_blank" rel="noopener noreferrer">
+                    Acessar Guia do Pastor Alemão
+                </a>
+            </section>
+
+            <!-- Card 3: Husky Siberiano -->
+            <section class="card">
+                <div class="site-title">Petz</div>
+                <a href="https://www.petz.com.br/cachorro/racas/husky-siberiano/" target="_blank" rel="noopener noreferrer">
+                    <img src="husky.png" alt="Cachorro da raça Husky Siberiano">
+                </a>
+                <a class="card-link" href="https://www.petz.com.br/cachorro/racas/husky-siberiano/" target="_blank" rel="noopener noreferrer">
+                    Acessar Guia do Husky Siberiano
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para fins acadêmicos.</p>
+    </footer>
+
+</body>
+</html>
